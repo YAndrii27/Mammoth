@@ -4,6 +4,7 @@ from .status_visibility import StatusVisibility
 from .replies_policy import RepliesPolicy
 from .context import Context
 from .filter_action import FilterAction
+from .report_category import ReportCategory
 
 __all__ = [
     "HttpMethods",
@@ -11,5 +12,6 @@ __all__ = [
     "StatusVisibility",
     "RepliesPolicy",
     "Context",
-    "FilterAction"
+    "FilterAction",
+    "ReportCategory"
 ]

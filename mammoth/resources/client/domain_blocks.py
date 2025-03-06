@@ -33,7 +33,7 @@ class DomainBlocks(BaseClientResource):
         session = await self.client(
             HttpMethods.POST,
             "domain_blocks",
-            expected_type=Domain,
+            expected_type=None,
             response_is_list=True,
             post_data={
                 "domain": domain
@@ -46,7 +46,7 @@ class DomainBlocks(BaseClientResource):
         session = await self.client(
             HttpMethods.DELETE,
             "domain_blocks",
-            expected_type=Domain,
+            expected_type=None,
             response_is_list=True,
             post_data={
                 "domain": domain
